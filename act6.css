@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: rgb(206, 197, 116); 
+}
+
+.texto-3d {
+    font-size: 2em;
+    color: white;
+
+    /*Efecto 3D usando múltiples sombras*/
+    text-shadow: 
+        1px 1px 0 rgba(230, 230, 230, 1),  
+        2px 2px 0 rgba(210, 210, 210, 1), 
+        3px 3px 0 rgba(190, 190, 190, 1),  
+        4px 4px 0 rgba(170, 170, 170, 1), 
+        5px 5px 0 black,                  
+        7px 7px 5px black;                
+        margin-right: 100px;
+}
+.texto-3d-verde {
+    font-size: 2em;
+    color: white;
+
+    /*Ahora con tono verde*/
+    text-shadow: 
+        1px 1px 0 rgba(180, 250, 180, 1),  
+        2px 2px 0 rgba(150, 230, 150, 1),  
+        3px 3px 0 rgba(120, 210, 120, 1),  
+        4px 4px 0 rgba(90, 190, 90, 1),    
+        5px 5px 0 rgba(60, 170, 60, 1),    
+        7px 7px 5px rgba(30, 150, 30, 1);  
+}

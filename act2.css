@@ -1,0 +1,40 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+@keyframes deslizarYExpandir {
+    0% {
+        left: 100%; /* Comienza fuera de la vista, a la derecha */
+        font-size: 100%; /* Tamaño original de la letra */
+        margin-left: 0;
+    }
+    75% {
+        font-size: 300%; /* Aumento al 300% en el 75% de la animación */
+        margin-left: 25%; /* Margen a la izquierda del 25% en el 75% de la animación */
+    }
+    100% {
+        left: 0; /* Termina en su posición original en la izquierda */
+    }
+}
+
+h1 {
+    color: #ccc;
+    animation-name: deslizarYExpandir;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    position: relative;
+    left: 0;
+    white-space: nowrap;
+}

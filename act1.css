@@ -1,0 +1,48 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+@keyframes deslizarDerechaIzquierda {
+    from {
+        left: 100%; /* Comienza fuera de la vista, a la derecha */
+    }
+    to {
+        left: 0; /* Termina en su posición original en la izquierda */
+    }
+}
+
+h1, h2, h3, h4 {
+    color: #ccc;
+    animation-name: deslizarDerechaIzquierda;
+    animation-timing-function: ease-out; 
+    animation-fill-mode: forwards;
+    position: relative; 
+    left: 0; 
+    white-space: nowrap; 
+}
+
+h1 {
+    animation-duration: 1s; 
+}
+
+h2 {
+    animation-duration: 1.5s; 
+}
+
+h3 {
+    animation-duration: 2s; 
+}
+
+h4 {
+    animation-duration: 2.5s; 
+}
